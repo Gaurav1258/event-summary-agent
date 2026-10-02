@@ -1,0 +1,12 @@
+[project]
+name = "event-summary-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "datasets>=5.0.1",
+    "google-cloud-storage>=3.16.0",
+    "kaggle>=2.2.4",
+    "pandas>=3.0.6",
+]

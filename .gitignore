@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Environment Variables
+.env
+.env.local
+.env.*
+!.env.example
+
+# Secrets & Service Account Keys
+*service-account*.json
+*sa-key*.json
+credentials.json
+secrets/
+
+# Data directories
+data/
