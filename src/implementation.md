@@ -7,38 +7,38 @@ This document outlines the exact data flow and architectural components of the E
 ```mermaid
 flowchart TD
     %% External Entities
-    UI[Investigator UI / Screening Engine]
-    MCP[MCP Server / API Client]
+    UI[Investigator UI or Screening Engine]
+    MCP[MCP Server or API Client]
     
     %% Backend Service (Cloud Run)
-    subgraph Backend [Google Cloud Run: FastAPI Service]
-        API[FastAPI Endpoint\nPOST /api/v1/summarize]
-        Orchestrator[Map-Reduce Orchestrator\nsrc/llm.py]
-        Scraper[Async Web Scraper\nsrc/scraper.py]
+    subgraph Backend [Google Cloud Run FastAPI Service]
+        API[FastAPI Endpoint POST api summarize]
+        Orchestrator[Map-Reduce Orchestrator src llm.py]
+        Scraper[Async Web Scraper src scraper.py]
     end
     
     %% GCP Services
-    GCS[(Google Cloud Storage\nMock Data)]
-    VertexAI[Google Vertex AI\nGemini Models]
+    GCS[(Google Cloud Storage Mock Data)]
+    VertexAI[Google Vertex AI Gemini Models]
     
     %% Data Flow
-    UI -->|1. Candidate Profile & Hit Metadata| MCP
-    MCP -->|2. HTTP POST (URLs & Candidate Info)| API
+    UI -->|1. Candidate Profile and Hit Metadata| MCP
+    MCP -->|2. HTTP POST URLs and Candidate Info| API
     API -->|3. Validates payload via Pydantic| Orchestrator
     
     %% Fetching Data
     Orchestrator -->|4. List of up to 100 URLs| Scraper
     Scraper -->|5. Async HTTP GET| ExternalWeb[External News Sites]
     ExternalWeb -->|6. Raw HTML| Scraper
-    Scraper -->|7. Cleaned Text (trafilatura)| Orchestrator
+    Scraper -->|7. Cleaned Text| Orchestrator
     
     %% Note: GCS is used for testing mock data instead of External Web
-    GCS -.->|Alternative: Fetch Test Data| Orchestrator
+    GCS -.->|Alternative Fetch Test Data| Orchestrator
     
     %% LLM Map-Reduce Flow
-    Orchestrator -->|8. Parallel Prompts (Map Step)| VertexAI
+    Orchestrator -->|8. Parallel Prompts Map Step| VertexAI
     VertexAI -->|9. Up to 100 Fact Extractions| Orchestrator
-    Orchestrator -->|10. Final Synthesis Prompt (Reduce Step)| VertexAI
+    Orchestrator -->|10. Final Synthesis Prompt Reduce Step| VertexAI
     VertexAI -->|11. Final Investigator Report| Orchestrator
     
     %% Return Path
