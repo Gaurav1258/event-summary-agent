@@ -25,3 +25,17 @@ class ScrapedArticle(BaseModel):
     @property
     def is_success(self) -> bool:
         return self.content is not None and self.error is None
+
+class ScrapingStats(BaseModel):
+    total_links: int
+    successful_scrapes: int
+    failed_scrapes: int
+
+class SummaryResponse(BaseModel):
+    """The structured response returned to the investigator / screening engine."""
+    candidate_id: str
+    hit_id: str
+    entity_name: str
+    stats: ScrapingStats
+    summary_report: str
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))

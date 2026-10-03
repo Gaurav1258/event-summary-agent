@@ -26,19 +26,21 @@ Build an agent to assist investigators in Namelist Screening by automatically su
 - [x] Implement parallel/async processing to efficiently handle up to 100 links at once using `httpx` and `asyncio`.
 
 ### Phase 3: Summarization Engine (LLM Integration)
-- [ ] **Vertex AI Setup:** Install Google GenAI SDK and authenticate with `mlops2215` project.
-- [ ] **Map Step (Parallel Extraction):** Design a prompt to extract candidate-specific facts from individual articles concurrently.
-- [ ] **Reduce Step (Final Report):** Design a synthesis prompt that takes the extracted facts and generates a final investigator summary.
-- [ ] Implement the Map-Reduce orchestration logic in Python to tie the scraper outputs to the LLM inputs.
+- [x] **Vertex AI Setup:** Install Google GenAI SDK and authenticate with `mlops2215` project using Gemini 2.5 Flash and Pro.
+- [x] **Map Step (Parallel Extraction):** Design prompt to extract candidate-specific facts from individual articles concurrently.
+- [x] **Reduce Step (Final Report):** Design synthesis prompt that generates final investigator summary report.
+- [x] Implement the Map-Reduce orchestration logic in Python (`src/llm.py`).
+- [x] **Evaluation Framework:** Create automated golden evalset (`tests/eval_data.json`) and pytest test suite (`tests/test_llm_eval.py`).
 
 ### Phase 4: API & Backend Service
-- [ ] Develop a backend API (e.g., using FastAPI) to receive screening events and return summaries.
-- [ ] Implement asynchronous task queues (e.g., using GCP Pub/Sub or Celery) since fetching and summarizing 100 links might take longer than standard HTTP timeout limits.
-- [ ] Define standardized JSON response formats for the screening tools to ingest.
+- [x] Develop a backend API (`src/api.py`) using FastAPI with CORS, logging, and error handling.
+- [x] Define standardized JSON schemas (`src/schema.py`) with Pydantic for screening requests and responses.
+- [x] Add `/health` monitoring endpoint.
+- [x] Create comprehensive automated integration tests (`tests/test_api.py`) covering health, empty payloads, and live end-to-end Map-Reduce processing.
 
 ### Phase 5: GCP Infrastructure & Deployment
-- [ ] Set up GCP Project, Authentication, and IAM roles.
-- [ ] Containerize the application using Docker.
-- [ ] **CI/CD Configuration:** Connect GitHub repo to Google Cloud Build for automated deployments.
-- [ ] Deploy the API to Google Cloud Run automatically via Cloud Build.
+- [x] Set up GCP Project, Authentication, and IAM roles (`mlops2215`).
+- [x] Containerize the application using Docker (`Dockerfile`, `.dockerignore`) using official UV base image.
+- [x] **CI/CD Configuration:** Write `cloudbuild.yaml` for automated container builds and Cloud Run deployment.
+- [ ] Connect GitHub repo to Google Cloud Build triggers and deploy live.
 - [ ] Implement proper logging and monitoring for auditing and debugging (Cloud Logging).
