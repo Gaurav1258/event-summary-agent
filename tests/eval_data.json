@@ -1,0 +1,26 @@
+[
+  {
+    "test_id": "eval_1",
+    "description": "True Positive: Article clearly mentions the candidate's financial crimes.",
+    "candidate_name": "Arthur Pendelton",
+    "article_text": "In a major international crackdown today, Arthur Pendelton was indicted by the Department of Justice for orchestrating a complex $15 million money laundering scheme using offshore shell companies in the Bahamas.",
+    "expected_result": "MATCH",
+    "expected_keywords": ["indicted", "money laundering", "$15 million", "shell companies"]
+  },
+  {
+    "test_id": "eval_2",
+    "description": "False Positive: Exact name match, but entirely wrong context (e.g. an innocent sports player).",
+    "candidate_name": "Arthur Pendelton",
+    "article_text": "Local high school basketball star Arthur Pendelton scored 40 points in last night's championship game, securing a scholarship to State University.",
+    "expected_result": "NO_MATCH",
+    "expected_keywords": []
+  },
+  {
+    "test_id": "eval_3",
+    "description": "Unrelated Noise: Article doesn't mention the candidate at all.",
+    "candidate_name": "Jane Smith",
+    "article_text": "Global markets rallied today after the Federal Reserve announced a surprising cut to interest rates, sending tech stocks soaring.",
+    "expected_result": "NO_MATCH",
+    "expected_keywords": []
+  }
+]
