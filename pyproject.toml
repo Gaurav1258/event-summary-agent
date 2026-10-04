@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "aiofiles>=25.1.0",
     "datasets>=5.0.1",
     "fastapi>=0.142.2",
     "google-cloud-storage>=3.16.0",

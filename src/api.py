@@ -5,6 +5,7 @@ from contextlib import asynccontextmanager
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from .schema import CandidateHit, SummaryResponse, ScrapingStats
 from .scraper import ArticleScraper
@@ -132,3 +133,12 @@ async def summarize_candidate_hit(payload: CandidateHit):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"An error occurred while generating the summary: {str(e)}"
         )
+
+# Mount static frontend build if present (serves React UI at root /)
+static_dir = os.path.join(os.path.dirname(__file__), "..", "static")
+if not os.path.exists(static_dir):
+    static_dir = os.path.join(os.path.dirname(__file__), "..", "frontend", "dist")
+
+if os.path.exists(static_dir):
+    logger.info(f"Serving static frontend UI from: {static_dir}")
+    app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
