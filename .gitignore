@@ -229,5 +229,7 @@ __marimo__/
 credentials.json
 secrets/
 
-# Data directories
-data/
+# Data directories (ignore local raw datasets in root)
+/data/
+!src/data/
+!src/data/**

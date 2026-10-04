@@ -20,6 +20,17 @@ async def test_health_check():
         assert data["service"] == "event-summary-agent"
 
 @pytest.mark.asyncio
+async def test_get_candidates():
+    """Verify that the candidates catalog endpoint returns candidate records."""
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        response = await client.get("/api/v1/candidates")
+        assert response.status_code == 200
+        candidates = response.json()
+        assert len(candidates) >= 5
+        assert any(c["candidate_id"] == "CAND-001-SANCTION" for c in candidates)
+
+@pytest.mark.asyncio
 async def test_empty_events_payload():
     """Verify that the API gracefully handles an empty events array."""
     transport = ASGITransport(app=app)

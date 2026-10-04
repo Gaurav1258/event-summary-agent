@@ -1,4 +1,5 @@
 import os
+import json
 import logging
 from contextlib import asynccontextmanager
 from dotenv import load_dotenv
@@ -67,6 +68,18 @@ async def health_check():
         "project_id": os.environ.get("GCP_PROJECT_ID", "mlops2215"),
         "version": "1.0.0"
     }
+
+@app.get("/api/v1/candidates", tags=["Screening"])
+async def get_candidate_hits():
+    """Returns pre-loaded candidate screening hits with adverse media links for the UI."""
+    data_path = os.path.join(os.path.dirname(__file__), "data", "candidate_hits.json")
+    if not os.path.exists(data_path):
+        data_path = os.path.join(os.path.dirname(__file__), "..", "data", "candidate_hits.json")
+        
+    if os.path.exists(data_path):
+        with open(data_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
 
 @app.post("/api/v1/summarize", response_model=SummaryResponse, tags=["Screening"])
 async def summarize_candidate_hit(payload: CandidateHit):

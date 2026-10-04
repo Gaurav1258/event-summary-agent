@@ -51,3 +51,15 @@ Build an agent to assist investigators in Namelist Screening by automatically su
 - [x] Connect GitHub repo to Google Cloud Build triggers and deploy live.
 - [x] Deploy live to Google Cloud Run (`https://event-summary-agent-vu53wmoyqa-uc.a.run.app`).
 - [x] Implement proper logging and monitoring for auditing and debugging (Cloud Logging).
+
+### Phase 6: Frontend Investigator Workspace (TypeScript + React)
+- [x] Initialize React + TypeScript application with Vite and Tailwind CSS in `frontend/`.
+- [x] Document frontend architecture and state management in `frontend/implementation.md`.
+- [x] Define TypeScript interfaces in `frontend/src/types.ts` mirroring backend Pydantic models.
+- [x] Expose `GET /api/v1/candidates` in `src/api.py` to serve candidate profiles catalog.
+- [x] Build UI components:
+  - `CandidateSidebar`: Browse screening hits with risk tags, countries, and event counts.
+  - `EventLinksDrawer`: Inspect adverse media links, source domains, and news titles with live search filtering.
+  - `InvestigationWorkspace`: Trigger analysis, display live scraping counters, and render formatted Markdown report with citations.
+  - `ModeBadge`: Display whether Direct Mode or Map-Reduce Mode is active based on link volume.
+- [x] Connect frontend to live Cloud Run backend with Vite dev proxy and verified production build.
