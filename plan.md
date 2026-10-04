@@ -32,6 +32,12 @@ Build an agent to assist investigators in Namelist Screening by automatically su
 - [x] Implement the Map-Reduce orchestration logic in Python (`src/llm.py`).
 - [x] **Evaluation Framework:** Create automated golden evalset (`tests/eval_data.json`) and pytest test suite (`tests/test_llm_eval.py`).
 
+### Phase 3.5: Dynamic Threshold & Concurrency Optimization
+- [x] **Direct Mode Threshold (`<= 3` links):** Route small requests to single unified Gemini 2.5 Pro prompt to minimize latency and token overhead.
+- [x] **Map-Reduce Mode (`> 3` links):** Trigger parallel map extraction with Gemini 2.5 Flash for high-volume hits.
+- [x] **Rate-Limit Throttle:** Apply `asyncio.Semaphore(10)` to map calls to prevent GCP 429 quota exhaustion on up to 100 links.
+- [x] **Hierarchical Reduce:** Chunk combined facts when exceeding 25,000 characters before final synthesis.
+
 ### Phase 4: API & Backend Service
 - [x] Develop a backend API (`src/api.py`) using FastAPI with CORS, logging, and error handling.
 - [x] Define standardized JSON schemas (`src/schema.py`) with Pydantic for screening requests and responses.
@@ -42,5 +48,6 @@ Build an agent to assist investigators in Namelist Screening by automatically su
 - [x] Set up GCP Project, Authentication, and IAM roles (`mlops2215`).
 - [x] Containerize the application using Docker (`Dockerfile`, `.dockerignore`) using official UV base image.
 - [x] **CI/CD Configuration:** Write `cloudbuild.yaml` for automated container builds and Cloud Run deployment.
-- [ ] Connect GitHub repo to Google Cloud Build triggers and deploy live.
-- [ ] Implement proper logging and monitoring for auditing and debugging (Cloud Logging).
+- [x] Connect GitHub repo to Google Cloud Build triggers and deploy live.
+- [x] Deploy live to Google Cloud Run (`https://event-summary-agent-vu53wmoyqa-uc.a.run.app`).
+- [x] Implement proper logging and monitoring for auditing and debugging (Cloud Logging).

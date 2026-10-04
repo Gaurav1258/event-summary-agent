@@ -69,3 +69,36 @@ flowchart TD
 - **What it does (Map Step):** Sends each article's text *individually* to Vertex AI. The prompt asks: *"Does this text mention the candidate? If so, extract the risk-relevant facts."*
 - **What it does (Reduce Step):** Collects all the extracted facts from the Map step and sends them *together* to Vertex AI in a final prompt. This prompt asks the LLM to write a cohesive, deduplicated Investigator Summary.
 - **What it gives:** The final text report back to the FastAPI endpoint.
+
+
+## Dynamic Orchestration & Threshold Architecture
+
+To optimize latency, cost, and rate limits, the summarization engine employs an adaptive orchestration strategy based on link count and payload volume:
+
+```mermaid
+flowchart TD
+    Start[Incoming Candidate Hit] --> Check{Number of Valid Articles}
+    Check -->|3 or Fewer Articles| Direct[Direct Mode: Single Gemini 2.5 Pro Call]
+    Check -->|More than 3 Articles| Map[Map-Reduce Mode]
+    
+    subgraph Map-Reduce Mode
+        Map --> ThrottledMap[Parallel Map Step: Semaphore 10 - Gemini 2.5 Flash]
+        ThrottledMap --> Filter[Filter NO_MATCH articles]
+        Filter --> CheckTokens{Combined Facts Length}
+        CheckTokens -->|Standard Size: 25000 chars or less| FinalReduce[Final Synthesis Report: Gemini 2.5 Pro]
+        CheckTokens -->|Exceeds 25000 chars| TreeReduce[Hierarchical Chunked Reduce]
+        TreeReduce --> FinalReduce
+    end
+    
+    Direct --> Output[Investigator Summary Report]
+    FinalReduce --> Output
+```
+
+### Threshold Specifications
+
+| Mode / Feature | Trigger Condition | Execution Strategy | Model Used |
+| :--- | :--- | :--- | :--- |
+| **Direct Mode** | `<= 3` valid articles | Skips Map extraction entirely. Sends all articles directly in a unified prompt for fast cross-document reasoning. | `gemini-2.5-pro` |
+| **Map-Reduce Mode** | `> 3` valid articles | Executes parallel map extraction on each article to weed out false positives and isolate adverse facts. | `gemini-2.5-flash` |
+| **Concurrency Throttle** | All Map operations | Uses `asyncio.Semaphore(10)` to cap concurrent Vertex AI API calls at 10 to avoid GCP 429 rate limits. | N/A (Async runtime) |
+| **Hierarchical Reduce** | Combined facts `> 25,000` characters | Batches extracted facts into chunks of 10 for intermediate synthesis before generating the final report. | `gemini-2.5-pro` |
