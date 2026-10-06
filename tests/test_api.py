@@ -28,7 +28,7 @@ async def test_get_candidates():
         assert response.status_code == 200
         candidates = response.json()
         assert len(candidates) >= 5
-        assert any(c["candidate_id"] == "CAND-001-SANCTION" for c in candidates)
+        assert any(c["candidate_id"] == "CAND-001-ADANI" for c in candidates)
 
 @pytest.mark.asyncio
 async def test_empty_events_payload():

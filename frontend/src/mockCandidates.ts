@@ -2,492 +2,38 @@ import type { CandidateProfile } from './types';
 
 export const DEFAULT_CANDIDATES: CandidateProfile[] = [
   {
-    "candidate_id": "CAND-001-SANCTION",
-    "hit_id": "HIT-90141",
-    "entity_name": "Viktor Petrov",
-    "risk_category": "High Risk - International Sanctions & Money Laundering",
-    "country": "Cyprus / Russia",
-    "description": "Politically exposed person flagged in multiple offshore financial shell investigations.",
-    "total_events": 25,
+    "candidate_id": "CAND-001-ADANI",
+    "hit_id": "HIT-ADANI-2024",
+    "entity_name": "Gautam Adani",
+    "risk_category": "High Risk - US DOJ $265M Bribery Indictment & FCPA",
+    "country": "India / United States",
+    "description": "Billionaire industrialist indicted by US Federal Court in Brooklyn over alleged $265 million bribery scheme involving solar energy contracts.",
+    "total_events": 19,
     "events": [
       {
-        "url": "https://adcllc.org/2016/06/29/new-site-test/2024/11/24/popular-casino-games-for-mobile-phones-102",
-        "title": "Popular Casino Games For Mobile Phones",
-        "source_name": "adcllc.org"
+        "url": "https://en.wikipedia.org/wiki/Gautam_Adani",
+        "title": "Gautam Adani - Wikipedia Compliance Record & Indictments",
+        "source_name": "Wikipedia"
       },
       {
-        "url": "https://www.nation.com.pk/24-Nov-2024/158-872-power-pilferers-detected-in-lesco-region",
-        "title": "158,872 power pilferers detected in LESCO region",
-        "source_name": "nation.com.pk"
+        "url": "https://widgets.hindustantimes.com/india-news/another-cong-setback-further-erodes-its-parl-polls-advantage-101732389262089.html",
+        "title": "Another Cong setback further erodes its Parl polls advantage",
+        "source_name": "hindustantimes.com"
       },
       {
-        "url": "https://www.etfdailynews.com/2024/11/24/intuit-nasdaqintu-trading-down-3-6-on-analyst-downgrade",
-        "title": "Intuit (NASDAQ:INTU) Trading Down 3.6% on Analyst Downgrade",
-        "source_name": "etfdailynews.com"
-      },
-      {
-        "url": "https://www.newsbreak.com/ktsm-1589999/3687265844776-hyundai-kia-recall-over-200k-electric-cars-over-power-issues",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://www.bitget.com/news/detail/12560604369042",
-        "title": "Musk: Insane government spending is driving the United States into bankruptcy",
-        "source_name": "bitget.com"
-      },
-      {
-        "url": "https://www.newsdirectory3.com/surge-in-air-cargo-spot-rates-from-europe-to-americas-fuels-global-price-increase",
-        "title": "Surge in Air Cargo Spot Rates from Europe to Americas Fuels Global Price Increase",
-        "source_name": "newsdirectory3.com"
-      },
-      {
-        "url": "https://khak.com/ixp/722/p/wisconsin-concert-venue-best-united-states",
-        "title": "Bankrupt Furniture Chain Closing All Stores Including in Iowa",
-        "source_name": "khak.com"
-      },
-      {
-        "url": "https://www.reviewjournal.com/local/traffic/for-an-rj-reporter-taking-an-uber-to-f1-was-an-exercise-in-patience-and-delay-3217753",
-        "title": "Taking an Uber to F1 in Las Vegas was an exercise in delay and patience | Traffic | Local",
-        "source_name": "reviewjournal.com"
-      },
-      {
-        "url": "https://www.moneycontrol.com/news/india/bihar-bypolls-prashant-kishors-jan-suraaj-fails-to-impress-on-debut-12874304.html",
-        "title": "Bihar bypolls: Prashant Kishor's 'Jan Suraaj' fails to impress on debut",
-        "source_name": "moneycontrol.com"
-      },
-      {
-        "url": "https://www.rfi.fr/en/sports/20241123-liga-leaders-barca-suffer-late-collapse-in-celta-draw",
-        "title": "Liga leaders Barca suffer late collapse in Celta draw",
-        "source_name": "rfi.fr"
-      },
-      {
-        "url": "https://www.moneycontrol.com/news/world/cop29-india-rejects-new-300-bn-climate-finance-deal-12874299.html",
-        "title": "COP29: India rejects new $300 bn climate finance deal",
-        "source_name": "moneycontrol.com"
-      },
-      {
-        "url": "https://beforeitsnews.com/financial-markets/2024/11/psei-30s-weak-9-month-and-q3-performance-highlights-gdp-decline-symptoms-of-crowding-out-and-financial-repression-5412708.html",
-        "title": "PSEi 30's Weak 9-Month and Q3 Performance Highlights GDP Decline: Symptoms of Crowding-Out and Finan",
-        "source_name": "beforeitsnews.com"
-      },
-      {
-        "url": "https://www.archyworldys.com/businesses-that-benefit-from-self-entrepreneur-the-tax-incentive-is-necessary",
-        "title": "Businesses that benefit from \u201cself-entrepreneur\u201d\u2026 the tax incentive is necessary",
-        "source_name": "archyworldys.com"
-      },
-      {
-        "url": "https://www.naijanews.com/2024/11/24/latest-petrol-price-hike-news-update-on-fuel-scarcity-for-november-24th-2024",
-        "title": "Latest Petrol Price Hike News, Update On Fuel Scarcity For November 24th, 2024",
-        "source_name": "naijanews.com"
-      },
-      {
-        "url": "https://www.news9live.com/india/lucknows-ekana-stadium-fined-rs-5-lakh-for-waste-mismanagement-at-diljit-dosanjh-concert-2757737",
-        "title": "Lucknow\u2019s Ekana stadium fined Rs 5 lakh for waste mismanagement at Diljit Dosanjh concert",
-        "source_name": "news9live.com"
-      },
-      {
-        "url": "https://www.brecorder.com/news/40334092/copper-aluminium-under-pressure-from-weak-euro-zone-pmi",
-        "title": "Copper, aluminium under pressure from weak euro zone PMI",
-        "source_name": "brecorder.com"
-      },
-      {
-        "url": "https://thecurrencyanalytics.com/altcoins/bears-take-control-as-render-faces-continued-downward-pressure-148152",
-        "title": "Bears Take Control as RENDER Faces Continued Downward Pressure",
-        "source_name": "thecurrencyanalytics.com"
-      },
-      {
-        "url": "https://timesofindia.indiatimes.com/city/ludhiana/e-scooter-manufacturer-ordered-to-refund-65000-after-technical-failure/articleshow/115611918.cms",
-        "title": "E-Scooter Manufacturer Ordered to Refund \u20b965,000 After Technical Failure | Ludhiana News - Times of ",
-        "source_name": "indiatimes.com"
-      },
-      {
-        "url": "https://www.etfdailynews.com/2024/11/24/eagle-bancorp-montana-nasdaqebmt-downgraded-to-hold-rating-by-stocknews-com",
-        "title": "Eagle Bancorp Montana (NASDAQ:EBMT) Downgraded to \u201cHold\u201d Rating by StockNews.com",
-        "source_name": "etfdailynews.com"
-      },
-      {
-        "url": "https://www.newsbreak.com/the-us-sun-513995/3687370036265-black-friday-bargain-warning-over-fake-ai-reviews-that-could-lead-shoppers-to-dangerous-products-how-to-spot-them",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://articlescad.com/the-3-largest-disasters-in-private-adhd-diagnosis-uk-the-private-adhd-diagnosis-uks-3-biggest-disas-135217.html",
-        "title": "The 3 Largest Disasters In Private ADHD Diagnosis UK The Private ADHD Diagnosis UK's 3 Biggest Disas",
-        "source_name": "articlescad.com"
-      },
-      {
-        "url": "https://www.arcamax.com/politics/opeds/s-3495402",
-        "title": "Sarah Green Carmichael: While you do 5-day RTO I'll watch your best workers quit | Op Eds | ArcaMax ",
-        "source_name": "arcamax.com"
-      },
-      {
-        "url": "https://www.nation.lk/online/posco-shuts-down-wire-rod-mill-in-pohang-amid-supply-glut-284863.html",
-        "title": "POSCO shuts down wire rod mill in Pohang amid supply glut - Nation Online",
-        "source_name": "nation.lk"
-      },
-      {
-        "url": "https://www.malaymail.com/news/life/2024/11/24/no-lavish-weddings-no-parental-handouts-henan-retail-giant-stirs-debate-with-bold-new-employee-rules/157860",
-        "title": "No lavish weddings, no parental handouts: Henan retail giant stirs debate with bold new employee rul",
-        "source_name": "malaymail.com"
-      },
-      {
-        "url": "https://www.ndtvprofit.com/markets/fpi-selling-continues-in-november-at-rs-26533-crore-even-as-intensity-reduces",
-        "title": "FPI Selling Continues In November At Rs 26,533 Crore Even As Intensity Reduces",
-        "source_name": "ndtvprofit.com"
-      }
-    ]
-  },
-  {
-    "candidate_id": "CAND-002-FRAUD",
-    "hit_id": "HIT-88234",
-    "entity_name": "Elizabeth Holmes",
-    "risk_category": "High Risk - Securities & Wire Fraud",
-    "country": "United States",
-    "description": "Former healthcare tech executive convicted of investor fraud and false claims.",
-    "total_events": 18,
-    "events": [
-      {
-        "url": "https://newsdusk.com/are-you-weed-store-the-very-best-you-can-10-signs-of-failure-3",
-        "title": "Are You Weed Store The very best You can 10 Signs Of Failure",
-        "source_name": "newsdusk.com"
-      },
-      {
-        "url": "https://www.businesslive.co.za/bt/business-and-economy/2024-11-24-trump-20-lights-warning-signals-at-reserve-bank",
-        "title": "Trump 2.0 lights warning signals at Reserve Bank",
-        "source_name": "businesslive.co.za"
-      },
-      {
-        "url": "https://www.uschamber.com/small-business/small-business-victory-court-overturns-overtime-rule",
-        "title": "Small Business Victory - Court Overturns Overtime Rule",
-        "source_name": "uschamber.com"
-      },
-      {
-        "url": "https://www.dawn.com/newspaper/business-finance/2024-11-24",
-        "title": "Business & Finance -Newspaper - DAWN.COM",
-        "source_name": "dawn.com"
-      },
-      {
-        "url": "https://www.bnnbloomberg.ca:443/business/company-news/2024/11/24/uk-funds-risk-tax-hit-for-underinvesting-at-home-official-warns",
-        "title": "UK Funds Risk Tax Hit for Underinvesting at Home, Official Warns",
+        "url": "https://www.bnnbloomberg.ca:443/investing/2024/11/23/credit-is-so-hot-that-traders-are-building-shorts",
+        "title": "Credit Is So Hot That Traders Are Building Shorts",
         "source_name": "bnnbloomberg.ca"
       },
       {
-        "url": "https://www.archyworldys.com/gold-and-oil-prices-fall-as-the-dollar-rises",
-        "title": "Gold and oil prices fall as the dollar rises",
-        "source_name": "archyworldys.com"
+        "url": "https://techrights.org/n/2024/11/23/Links_23_11_2024_Press_Sold_to_Vultures_New_LLM_Blunders.shtml",
+        "title": "Techrights \u2014 Links 23/11/2024: Press Sold to Vultures, New LLM Blunders",
+        "source_name": "techrights.org"
       },
       {
-        "url": "https://www.thenigerianvoice.com/news/343361/nigerians-are-groaning-review-your-economic-policies-pdp-g.html",
-        "title": "Nigerians Are Groaning; Review Your Economic Policies\u2014 PDP Governor Tells Tinubu",
-        "source_name": "thenigerianvoice.com"
-      },
-      {
-        "url": "https://ca.marketscreener.com/quote/stock/S-P-GLOBAL-INC-27377749/news/Eurozone-private-sector-shrinks-due-to-declining-output-and-services-48444844",
-        "title": "Eurozone private sector shrinks due to declining output and services - MarketScreener",
-        "source_name": "marketscreener.com"
-      },
-      {
-        "url": "https://www.lokmattimes.com/business/diagnostic-startup-healthians-reports-rs-45-crore-loss-in-fy24-revenue-up-8-pc",
-        "title": "Diagnostic startup Healthians reports Rs 45 crore loss in FY24, revenue up 8 pc",
-        "source_name": "lokmattimes.com"
-      },
-      {
-        "url": "https://www.thehansindia.com/karnataka/crisis-grips-davanagere-farmers-despite-bumper-crop-924142",
-        "title": "Crisis grips Davanagere farmers despite bumper crop",
-        "source_name": "thehansindia.com"
-      },
-      {
-        "url": "https://stomp.straitstimes.com/singapore-seen/looking-forward-to-black-friday-online-shoppers-lost-1m-to-parcel-delivery-phishing",
-        "title": "Looking forward to Black Friday? Online shoppers lost $1m to parcel delivery phishing scam this year",
-        "source_name": "straitstimes.com"
-      },
-      {
-        "url": "https://seekingalpha.com/article/4739856-sonos-this-turnaround-will-take-awhile-rating-downgrade?source=feed_all_articles",
-        "title": "Sonos: This Turnaround Will Take Awhile (Rating Downgrade)",
-        "source_name": "seekingalpha.com"
-      },
-      {
-        "url": "http://jurnalistik.radenfatah.ac.id/trivial-blemishes-in-your-credit-score-will-mean",
-        "title": "Trivial blemishes in your credit score will mean that you most likely failed to rating a mortgage \u2013 ",
-        "source_name": "radenfatah.ac.id"
-      },
-      {
-        "url": "https://whowhatwhy.org/international/staffing-problems-hamstrung-afghanistan-reconstruction-watchdog-says",
-        "title": "Staffing Problems Hamstrung Afghanistan Reconstruction, Watchdog Says",
-        "source_name": "whowhatwhy.org"
-      },
-      {
-        "url": "https://www.straitstimes.com/business/robots-struggle-to-match-warehouse-workers-on-really-hard-jobs",
-        "title": "Robots struggle to match warehouse workers on \u2018really hard\u2019 jobs | The Straits Times",
-        "source_name": "straitstimes.com"
-      },
-      {
-        "url": "https://www.freepressjournal.in/mumbai/stealing-petroleum-based-fuels-adversely-affects-countrys-economy-bombay-hc",
-        "title": "Stealing Petroleum-Based Fuels Adversely Affects Country's Economy: Bombay HC",
-        "source_name": "freepressjournal.in"
-      },
-      {
-        "url": "https://sharecast.com/news/market-report-europe/2024-11-24/2",
-        "title": "Full list of stories by category Market Report - Europe - 2024-11-24 - 2 - Sharecast.com",
-        "source_name": "sharecast.com"
-      },
-      {
-        "url": "https://cyprus-mail.com/2024/11/24/house-prices-dip-in-uk-stronger-2025-expected",
-        "title": "House prices dip in UK, stronger 2025 expected | Cyprus Mail",
-        "source_name": "cyprus-mail.com"
-      }
-    ]
-  },
-  {
-    "candidate_id": "CAND-003-CORP-BRIBERY",
-    "hit_id": "HIT-74190",
-    "entity_name": "Odebrecht Global Holding",
-    "risk_category": "Moderate Risk - Foreign Corrupt Practices Act (FCPA)",
-    "country": "Brazil",
-    "description": "Conglomerate involved in historical cross-border bribery scandals with active monitorship.",
-    "total_events": 12,
-    "events": [
-      {
-        "url": "https://www.newsbreak.com/mystateline-com-wtvo-wqrf-1589920/3687235415209-rockford-s-oldest-manufacturer-is-facing-closure-in-january-2025",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://www.bssnews.net/business/225749",
-        "title": "Trump's mass deportation plan could end up hurting economic growth | Business",
-        "source_name": "bssnews.net"
-      },
-      {
-        "url": "https://www.themountaineer.com/news/survey-finds-majority-of-waynesville-employees-lack-trust-in-town-council/article_5c62ec18-a131-11ef-a99f-b76e74169009.html",
-        "title": "Survey finds majority of Waynesville employees lack trust in town council",
-        "source_name": "themountaineer.com"
-      },
-      {
-        "url": "https://www.isilparkhotel.com.tr/kars-gezi-rehberi/review-3-surprising-reasons-that-prove-flirtymoms-com-is-actually-duping-you",
-        "title": "Review \u2013 3 Surprising Reasons That Prove FlirtyMoms.com Is Actually Duping You |",
-        "source_name": "isilparkhotel.com.tr"
-      },
-      {
-        "url": "https://www.world-today-news.com/meta-scrambles-to-respond-to-upstart-social-platform-blueskys-surge-the-washington-post-4",
-        "title": "Meta scrambles to respond to upstart social platform Bluesky\u2019s surge \u2013 The Washington Post",
-        "source_name": "world-today-news.com"
-      },
-      {
-        "url": "https://www.etfdailynews.com/2024/11/24/raymond-james-has-pessimistic-outlook-of-eqb-fy2024-earnings",
-        "title": "Raymond James Has Pessimistic Outlook of EQB FY2024 Earnings",
-        "source_name": "etfdailynews.com"
-      },
-      {
-        "url": "https://iranfocus.com/iran/52638-the-intensifying-brain-drain-crisis-in-iran-a-look-at-academic-economic-and-healthcare-challenges",
-        "title": "The Intensifying Brain Drain Crisis in Iran: A Look at Academic, Economic, and Healthcare Challenges",
-        "source_name": "iranfocus.com"
-      },
-      {
-        "url": "https://www.wyomingnews.com/news/national/trumps-mass-deportation-plan-could-end-up-hurting-economic-growth/article_5564688b-b5ad-5637-b096-f3e10d0b4586.html",
-        "title": "Trump's mass deportation plan could end up hurting economic growth",
-        "source_name": "wyomingnews.com"
-      },
-      {
-        "url": "https://www.newsbreak.com/fox2548-wiproud-1590538/3687183241053-hyundai-kia-recall-over-200k-electric-cars-over-power-issues",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://www.marketbeat.com/instant-alerts/insider-selling-service-co-international-nysesci-director-sells-2555-shares-of-stock-2024-11-22",
-        "title": "Insider Selling: Service Co. International (NYSE:SCI) Director Sells 2,555 Shares of Stock",
-        "source_name": "marketbeat.com"
-      },
-      {
-        "url": "https://www.guampdn.com/news/fourth-times-the-charm-for-suspected-hope-depot-thief/article_423dd730-a97e-11ef-abb7-433e6652dd6b.html",
-        "title": "Fourth time's the charm for suspected Hope Depot thief",
-        "source_name": "guampdn.com"
-      },
-      {
-        "url": "https://allears.net/2024/11/23/449-lightning-lane-premier-pass-has-sold-out-ahead-of-thanksgiving-day-in-disney-world",
-        "title": "$449 Lightning Lane Premier Pass Has SOLD OUT Ahead of Thanksgiving Day in Disney World",
-        "source_name": "allears.net"
-      }
-    ]
-  },
-  {
-    "candidate_id": "CAND-004-FALSE-POSITIVE",
-    "hit_id": "HIT-33219",
-    "entity_name": "Michael Chang",
-    "risk_category": "Low Risk - Probable False Positive",
-    "country": "Hong Kong / Canada",
-    "description": "Common name collision against adverse news on unrelated financial fraud cases.",
-    "total_events": 15,
-    "events": [
-      {
-        "url": "http://business.malvern-online.com/malvern-online/article/gnwcq-2024-11-24-wolfspeed-inc-shareholder-alert-robbins-llp-reminds-investors-of-the-wolf-securities-class-action",
-        "title": "Wolfspeed, Inc. Shareholder Alert: Robbins LLP Reminds Investors of the WOLF Securities Class Action",
-        "source_name": "malvern-online.com"
-      },
-      {
-        "url": "https://www.marketbeat.com/instant-alerts/northfield-bancorp-inc-staten-island-ny-nasdaqnfbk-cut-to-sell-at-stocknewscom-2024-11-22",
-        "title": "Northfield Bancorp, Inc. (Staten Island, NY) (NASDAQ:NFBK) Cut to \"Sell\" at StockNews.com",
-        "source_name": "marketbeat.com"
-      },
-      {
-        "url": "https://www.bastillepost.com/global/article/4354596-plant-closure-layoffs-in-germany-inevitable-for-volkswagen-brand-chief",
-        "title": "Plant closure, layoffs in Germany inevitable for Volkswagen: brand chief",
-        "source_name": "bastillepost.com"
-      },
-      {
-        "url": "https://www.theepochtimes.com/world/hyundai-kia-recall-thousands-of-electric-vehicles-in-canada-over-concern-of-power-loss-5765179",
-        "title": "Hyundai, Kia Recall Thousands of Electric Vehicles in Canada Over Concern of Power Loss",
-        "source_name": "theepochtimes.com"
-      },
-      {
-        "url": "https://www.koat.com/article/new-mexicans-feel-high-prices-at-the-grocery-store/62997692",
-        "title": "KOAT Action 7 News at 10pm",
-        "source_name": "koat.com"
-      },
-      {
-        "url": "https://www.newsbreak.com/sporting-news-1608496/3687453616310-tampa-bay-buccaneers-named-best-opportunity-for-bill-belichick",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://www.newsbreak.com/wgno-1589957/3687327877710-rfk-jr-s-health-nomination-froot-loops-controversy-explained",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://www.si.com/college/alabama/football/bamacentral-instant-analysis-oklahoma-24-alabama-3-01jdeaq4a1gf",
-        "title": "BamaCentral Instant Analysis: Oklahoma 24, Alabama 3",
-        "source_name": "si.com"
-      },
-      {
-        "url": "https://www.sportingnews.com/us/mlb/los-angeles-dodgers/news/dodgers-teoscar-hernandez-predicted-dump-la-red-sox-free-agency/a4fc12ab63b0d7345b9531ac",
-        "title": "Dodgers $71 million All-Star predicted to dump LA for Red Sox in free agency",
-        "source_name": "sportingnews.com"
-      },
-      {
-        "url": "https://www.thecooldown.com/green-business/hotel-du-cap-eden-roc-fast-fashion",
-        "title": "Traveler sparks backlash after exposing unexpected side of hotel's new partnership: 'I'm shocked the",
-        "source_name": "thecooldown.com"
-      },
-      {
-        "url": "https://www.etfdailynews.com/2024/11/24/ry-fy2025-eps-estimate-decreased-by-national-bank-financial",
-        "title": "RY FY2025 EPS Estimate Decreased by National Bank Financial",
-        "source_name": "etfdailynews.com"
-      },
-      {
-        "url": "https://newsinfo.inquirer.net/2008431/fuel-price-hike-seen-amid-supply-worries",
-        "title": "Fuel price hike seen amid supply worries",
-        "source_name": "inquirer.net"
-      },
-      {
-        "url": "https://www.thelcn.com/townnews/politics/wrotb-putting-batavia-downs-hotel-expansion-on-hold/article_3567546a-7c7b-5cc7-a629-5e16c60cc6a8.html",
-        "title": "WROTB putting Batavia Downs hotel expansion on hold | Politics | thelcn.com",
-        "source_name": "thelcn.com"
-      },
-      {
-        "url": "https://vancouver.citynews.ca/2024/11/23/bc-transit-translink-funding-shortfall",
-        "title": "TransLink facing massive funding shortfall, says CEO",
-        "source_name": "citynews.ca"
-      },
-      {
-        "url": "https://www.defenseworld.net/2024/11/23/walmart-nysewmt-rating-lowered-to-hold-at-dz-bank.html",
-        "title": "Walmart (NYSE:WMT) Rating Lowered to Hold at DZ Bank",
-        "source_name": "defenseworld.net"
-      }
-    ]
-  },
-  {
-    "candidate_id": "CAND-005-STRESS-TEST",
-    "hit_id": "HIT-99999",
-    "entity_name": "Sam Bankman-Fried",
-    "risk_category": "Stress Test - High Volume 50 Events",
-    "country": "Bahamas / United States",
-    "description": "High-volume screening hit designed to test parallel scraping and Map-Reduce synthesis.",
-    "total_events": 50,
-    "events": [
-      {
-        "url": "https://www.southwestjournal.com/other/will-howard-net-worth",
-        "title": "Will Howard Net Worth 2024: Insights & Figures Revealed",
-        "source_name": "southwestjournal.com"
-      },
-      {
-        "url": "https://www.marketbeat.com/instant-alerts/evolus-nasdaqeols-trading-down-38-heres-what-happened-2024-11-22",
-        "title": "Evolus (NASDAQ:EOLS) Trading Down 3.8% - Here's What Happened",
-        "source_name": "marketbeat.com"
-      },
-      {
-        "url": "https://www.fox17online.com/news/local-news/grand-rapids/a-lump-of-coal-for-us-employees-federal-judge-overturns-new-overtime-rule",
-        "title": "'A lump of coal' for US employees: Federal judge overturns new overtime rule",
-        "source_name": "fox17online.com"
-      },
-      {
-        "url": "https://www.forbes.com/sites/ewanspence/2024/11/23/apple-macbook-pro-m4-black-friday-amazon-new-deal-discount-trade-in",
-        "title": "Apple Stays Away From Black Friday\u2019s MacBook Pro Sales",
-        "source_name": "forbes.com"
-      },
-      {
-        "url": "https://www.thenews.com.pk/print/1254318-bracing-for-trump-tariffs-china-s-xi-makes-diplomatic-push-at-global-summits",
-        "title": "Bracing for Trump tariffs, China's Xi makes diplomatic push at global summits",
-        "source_name": "thenews.com.pk"
-      },
-      {
-        "url": "https://www.etfdailynews.com/2024/11/24/community-health-systems-nysecyh-downgraded-by-raymond-james-to-underperform",
-        "title": "Community Health Systems (NYSE:CYH) Downgraded by Raymond James to Underperform",
-        "source_name": "etfdailynews.com"
-      },
-      {
-        "url": "https://www.etfdailynews.com/2024/11/24/midland-states-bancorp-nasdaqmsbi-cut-to-hold-at-stocknews-com",
-        "title": "Midland States Bancorp (NASDAQ:MSBI) Cut to Hold at StockNews.com",
-        "source_name": "etfdailynews.com"
-      },
-      {
-        "url": "https://www.etfdailynews.com/2024/11/24/energizer-nyseenr-lowered-to-equal-weight-rating-by-barclays",
-        "title": "Energizer (NYSE:ENR) Lowered to \u201cEqual Weight\u201d Rating by Barclays",
-        "source_name": "etfdailynews.com"
-      },
-      {
-        "url": "https://www.airforce-technology.com/news/uk-equipment-plan-unlikely-in-current-form-in-2025",
-        "title": "UK Equipment Plan \"unlikely in current form\" in 2025 - Airforce Technology",
-        "source_name": "airforce-technology.com"
-      },
-      {
-        "url": "https://news.koreaherald.com/view.php?ud=20241121050140",
-        "title": "Wealthy parents ditch Korean passports to get kids into international school",
-        "source_name": "koreaherald.com"
-      },
-      {
-        "url": "https://www.afr.com/policy/energy-and-climate/where-have-the-cowboy-solar-panel-spruikers-gone-home-battery-storage-20241104-p5knmd",
-        "title": "Where have the cowboy solar panel spruikers gone? Home battery storage",
-        "source_name": "afr.com"
-      },
-      {
-        "url": "https://economictimes.indiatimes.com/news/india/mounting-economic-costs-of-indias-killer-smog/articleshow/115615721.cms",
-        "title": "Adverse Media Event",
-        "source_name": "indiatimes.com"
-      },
-      {
-        "url": "https://247sports.com/college/mississippi-state/article/mississippi-state-football-vs-missouri-240274266",
-        "title": "GenesPage.com - Mississippi State Bulldogs Football Recruiting",
-        "source_name": "247sports.com"
-      },
-      {
-        "url": "https://articlescad.com/whats-holding-back-the-personal-injury-attorneys-industry-136697.html",
-        "title": "What's Holding Back The Personal Injury Attorneys Industry?",
-        "source_name": "articlescad.com"
-      },
-      {
-        "url": "https://time.news/two-men-accused-of-defrauding-uber-eats-of-more-than-2-million-euros",
-        "title": "Two men accused of defrauding Uber Eats of more than 2 million euros",
-        "source_name": "time.news"
-      },
-      {
-        "url": "https://www.independent.ie/business/richard-curran-bp-u-turn-on-looneys-renewables-vision-not-exactly-going-according-to-plan/a865117945.html",
-        "title": "Richard Curran: BP U-turn on Looney\u2019s renewables vision not exactly going according to plan",
-        "source_name": "independent.ie"
-      },
-      {
-        "url": "https://www.arabtimesonline.com/news/nearly-3-million-expats-in-kuwait-lack-university-qualifications",
-        "title": "Nearly 3 million expats in Kuwait lack university qualifications",
-        "source_name": "arabtimesonline.com"
+        "url": "http://island.lk/outlooks-of-adani-firms-affiliated-to-sri-lanka-projects-cut-to-negative-by-sp",
+        "title": "Outlooks of Adani firms affiliated to Sri Lanka projects cut to negative by S&P",
+        "source_name": "island.lk"
       },
       {
         "url": "https://www.dnaindia.com/business/report-gautam-adani-group-cfo-makes-big-statement-on-us-report-says-none-of-the-3119289",
@@ -495,144 +41,186 @@ export const DEFAULT_CANDIDATES: CandidateProfile[] = [
         "source_name": "dnaindia.com"
       },
       {
-        "url": "https://pledgetimes.com/developers-and-neighbors-fighting-over-the-judicialization-of-urban-planning",
-        "title": "Developers and neighbors, fighting over the judicialization of urban planning",
-        "source_name": "pledgetimes.com"
+        "url": "https://whatreallyhappened.com/NEW/stories/leveraged-bets-bitcoin-tesla-nvidia-adani-foreshadow-looming-global-margin-call-nvidia",
+        "title": "Leveraged bets on Bitcoin, Tesla, Nvidia, Adani foreshadow a looming global margin call; Nvidia belo",
+        "source_name": "whatreallyhappened.com"
       },
       {
-        "url": "https://www.marketbeat.com/instant-alerts/tandem-diabetes-care-inc-nasdaqtndm-director-kim-d-blickenstaff-sells-10000-shares-2024-11-22",
-        "title": "Tandem Diabetes Care, Inc. (NASDAQ:TNDM) Director Kim D. Blickenstaff Sells 10,000 Shares",
+        "url": "https://www.dnaindia.com/business/report-elon-musk-big-statement-on-future-of-us-claims-america-on-brink-of-3119291",
+        "title": "Adverse Media Article",
+        "source_name": "dnaindia.com"
+      },
+      {
+        "url": "https://www.india.com/business/gautam-adani-sagar-us-sec-summons-indian-billionaire-in-alleged-usd-265-million-bribery-case-mukesh-ambani-noel-tata-supreme-court-7416270",
+        "title": "Big trouble for Gautam Adani, US SEC summons Indian billionaire in alleged USD 265 million bribery c",
+        "source_name": "india.com"
+      },
+      {
+        "url": "https://timesofindia.indiatimes.com/india/after-lok-sabha-boost-maharashtra-drubbing-sends-congress-back-to-square-one/articleshow/115617032.cms",
+        "title": "After Lok Sabha boost, Maharashtra drubbing sends Congress back to square one",
+        "source_name": "indiatimes.com"
+      },
+      {
+        "url": "https://timesofindia.indiatimes.com/india/rahuls-adani-centric-poll-campaign-fails-to-move-voters-in-maharashtra/articleshow/115617230.cms",
+        "title": "Rahul's Adani-centric poll campaign fails to move voters in Maharashtra | India News - Times of Indi",
+        "source_name": "indiatimes.com"
+      },
+      {
+        "url": "https://www.dnaindia.com/viral/report-salary-of-prisoners-in-this-country-uk-is-more-than-jail-guards-teachers-it-is-3119300",
+        "title": "Adverse Media Article",
+        "source_name": "dnaindia.com"
+      },
+      {
+        "url": "https://kannada.asianetnews.com/business/us-securities-and-exchange-commission-summoned-adani-group-snfsmw",
+        "title": "US Securities and Exchange Commission summoned adani group: \u0c85\u0ca6\u0cbe\u0ca8\u0cbf\u0c97\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc6 \u0cb8\u0c82\u0c95\u0cb7\u0ccd\u0c9f: SEC \u0cb8\u0cae\u0ca8\u0ccd\u0cb8\u0ccd \u0c9c\u0cbe\u0cb0\u0cbf",
+        "source_name": "asianetnews.com"
+      },
+      {
+        "url": "https://www.newsdirectory3.com/us-indicts-gautam-adani-265-million-bribery-charges-impact-adani-green-energy",
+        "title": "US Indicts Gautam Adani: $265 Million Bribery Charges Impact Adani Green Energy",
+        "source_name": "newsdirectory3.com"
+      },
+      {
+        "url": "https://island.lk/outlooks-of-adani-firms-affiliated-to-sri-lanka-projects-cut-to-negative-by-sp",
+        "title": "Adverse Media Article",
+        "source_name": "island.lk"
+      },
+      {
+        "url": "https://www.livelaw.in/top-stories/us-indictment-of-adani-must-be-investigated-by-indian-agencies-petitioner-in-adani-hindenburg-matter-files-application-in-supreme-court-276136",
+        "title": "'US Indictment Of Adani Must Be Investigated By Indian Agencies' : Petitioner In Adani-Hindenburg Ma",
+        "source_name": "livelaw.in"
+      },
+      {
+        "url": "https://www.newindianexpress.com/business/2024/Nov/24/never-signed-pact-to-operate-airport-in-kenya-adani",
+        "title": "Never signed pact to operate airport in Kenya: Adani",
+        "source_name": "newindianexpress.com"
+      },
+      {
+        "url": "https://www.businessworld.in/article/sebi-opens-new-front-against-adani-on-non-disclosures-540131",
+        "title": "SEBI Opens New Front Against Adani On Non-disclosures - BW BusinessWorld",
+        "source_name": "businessworld.in"
+      },
+      {
+        "url": "https://www.devdiscourse.com/article/Newsalert/3169038-at-all-party-meeting-congress-called-for-discussion-in-parliament-on-bribery-charges-against-adani-group-pramod-tiwari",
+        "title": "At all-party meeting, Congress called for discussion in Parliament on bribery charges against Adani ",
+        "source_name": "devdiscourse.com"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND-002-SBF",
+    "hit_id": "HIT-FTX-CRIM",
+    "entity_name": "Sam Bankman-Fried",
+    "risk_category": "High Risk - Wire Fraud & Multibillion Embezzlement",
+    "country": "Bahamas / United States",
+    "description": "Founder of FTX crypto exchange convicted on 7 criminal fraud counts resulting in a 25-year federal prison sentence.",
+    "total_events": 8,
+    "events": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sam_Bankman-Fried",
+        "title": "Sam Bankman-Fried Conviction & Sentencing",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX",
+        "title": "Collapse and Bankruptcy of FTX Exchange",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Alameda_Research",
+        "title": "Alameda Research Criminal Co-conspiracy",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Caroline_Ellison",
+        "title": "Caroline Ellison Plea Agreement and Testimony",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gary_Wang_(businessman)",
+        "title": "Gary Wang FTX Fraud Testimony",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Nishad_Singh",
+        "title": "Nishad Singh FTX Campaign Finance Findings",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Securities_fraud",
+        "title": "Federal Securities Fraud Charges Overview",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Wire_fraud",
+        "title": "Wire Fraud Statues and Case Precedents",
+        "source_name": "Wikipedia"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND-003-MUSK",
+    "hit_id": "HIT-MUSK-CORP",
+    "entity_name": "Elon Musk",
+    "risk_category": "Moderate Risk - SEC Inquiries & Board Governance",
+    "country": "United States",
+    "description": "Technology executive subject to regulatory reviews by the SEC, NLRB, and multiple corporate governance lawsuits.",
+    "total_events": 16,
+    "events": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Elon_Musk",
+        "title": "Elon Musk - Corporate Lawsuits & SEC Regulatory Scrutiny",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://www.econotimes.com/TikTok-CEO-Turns-to-Musk-for-Guidance-Amid-Trump-Policy-Concerns-WSJ-Reports-1694844",
+        "title": "TikTok CEO Turns to Musk for Guidance Amid Trump Policy Concerns, WSJ Reports - EconoTimes",
+        "source_name": "econotimes.com"
+      },
+      {
+        "url": "https://www.independentsentinel.com/elon-musk-warns-of-bankruptcy-in-our-immediate-future",
+        "title": "Elon Musk Warns of Bankruptcy in Our Immediate Future",
+        "source_name": "independentsentinel.com"
+      },
+      {
+        "url": "https://www.marketbeat.com/instant-alerts/takkt-etrttk-reaches-new-12-month-low-should-you-sell-2024-11-22",
+        "title": "Takkt (ETR:TTK) Reaches New 12-Month Low - Should You Sell?",
         "source_name": "marketbeat.com"
       },
       {
-        "url": "https://trinidadexpress.com/opinion/columnists/stop-talking-rubbish/article_a11997c4-a9f8-11ef-87ce-e3ab491bfd0c.html",
-        "title": "Stop talking rubbish",
-        "source_name": "trinidadexpress.com"
+        "url": "https://twitchy.com/warren-squire/2024/11/23/mark-cuban-musk-has-an-army-of-bot-n2404168",
+        "title": "Mark Cuban Goes Full BlueAnon Accusing Elon Musk of Having Bot Army",
+        "source_name": "twitchy.com"
       },
       {
-        "url": "https://newstral.com/en/article/en/1260530484/tax-reform-bills-reps-deny-govs-threatening-lawmakers",
-        "title": "punchng.com: \u00abTax reform bills: Reps deny govs threatening lawmakers\u00bb - Related news - Newstral.com",
-        "source_name": "newstral.com"
+        "url": "https://japan-forward.com/us-vs-the-ccp-will-trumps-business-savvy-clash-with-national-strategy",
+        "title": "US vs the CCP: Will Trump's Business Savvy Clash with National Strategy?",
+        "source_name": "japan-forward.com"
       },
       {
-        "url": "https://www.sentinelassam.com/more-news/national-news/tamil-nadu-delta-farmers-worried-over-fertiliser-shortage",
-        "title": "Tamil Nadu Delta farmers worried over fertiliser shortage",
-        "source_name": "sentinelassam.com"
+        "url": "https://techrights.org/n/2024/11/23/Links_23_11_2024_Press_Sold_to_Vultures_New_LLM_Blunders.shtml",
+        "title": "Techrights \u2014 Links 23/11/2024: Press Sold to Vultures, New LLM Blunders",
+        "source_name": "techrights.org"
       },
       {
-        "url": "https://news24online.com/entertainment/kanguva-box-office-collection-suriya-starrer-fails-to-touch-even-rs-70-cr-mark-amid-rs-350-cr-budget/388980",
-        "title": "Kanguva Box Office Collection: Suriya-Starrer Fails To Touch Even Rs 70 Cr Mark Amid Rs 350 Cr Budge",
-        "source_name": "news24online.com"
+        "url": "https://www.benzinga.com/news/24/11/42153139/costs-have-escalated-drastically-warns-kevin-oleary-hopeful-elon-and-vivek-can-simplify-tax-and-deregulate-t",
+        "title": "Costs Have Escalated Drastically, Warns Kevin O'Leary, Hopeful Elon And Vivek Can 'Simplify Tax And ",
+        "source_name": "benzinga.com"
       },
       {
-        "url": "https://massivelyop.com/2024/11/23/ashes-of-creation-wipes-away-assets-and-eliminates-over-100-characters-over-duping-incident",
-        "title": "Ashes of Creation wipes away assets and eliminates over 100 characters over duping incident | Massiv",
-        "source_name": "massivelyop.com"
-      },
-      {
-        "url": "https://www.hindustantimes.com/car-bike/bmw-cars-in-india-to-be-costlier-from-this-date-heres-how-much-101732433729237.html",
-        "title": "BMW cars in India to be costlier from this date. Here's how much",
-        "source_name": "hindustantimes.com"
-      },
-      {
-        "url": "https://www.theweek.in/wire-updates/international/2024/11/24/fgn11-cop29-finance-deal-india.html",
-        "title": "COP29 India rejects new USD 300 bn climate finance deal- The Week",
-        "source_name": "theweek.in"
-      },
-      {
-        "url": "https://www.crossroadstoday.com/news/victoria-nonprofit-hoping-for-high-fundraiser-turnout/article_4a6e67fa-aa1c-11ef-a58d-0374114dae3d.html",
-        "title": "Victoria nonprofit hoping for high fundraiser turnout | News | crossroadstoday.com",
-        "source_name": "crossroadstoday.com"
-      },
-      {
-        "url": "https://democraticunderground.com/10143345678",
-        "title": "Retailers claim credit card swipe fees are driving inflation",
-        "source_name": "democraticunderground.com"
-      },
-      {
-        "url": "https://www.etfdailynews.com/2024/11/24/zacks-research-forecasts-weaker-earnings-for-lpl-financial",
-        "title": "Zacks Research Forecasts Weaker Earnings for LPL Financial",
-        "source_name": "etfdailynews.com"
-      },
-      {
-        "url": "https://news-tunisia.tunisienumerique.com/tunisia-a-detention-warrant-issued-against-the-manager-of-a-well-drilling-company-for-involvement-in-public-procurement-corruption-cases",
-        "title": "Tunisia \u2013 A detention warrant issued against the manager of a well-drilling company for involvement ",
-        "source_name": "tunisienumerique.com"
-      },
-      {
-        "url": "https://www.newsbreak.com/wjhl-1589966/3687184530874-hyundai-kia-recall-over-200k-electric-cars-over-power-issues",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://www.terradaily.com/reports/IMF_sees_limited_impact_of_floods_on_Spain_GDP_growth_999.html",
-        "title": "IMF sees 'limited' impact of floods on Spain GDP growth",
-        "source_name": "terradaily.com"
-      },
-      {
-        "url": "https://www.canberratimes.com.au/story/8828144/increased-housing-options-slow-canberra-property-sales/?src=rss",
-        "title": "Increased housing options slow Canberra property sales",
-        "source_name": "canberratimes.com.au"
-      },
-      {
-        "url": "https://www.newsbreak.com/fox-2-1589943/3687320353072-rfk-jr-s-health-nomination-froot-loops-controversy-explained",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://www.marketbeat.com/instant-alerts/victory-capital-management-inc-trims-stock-holdings-in-arch-resources-inc-nysearch-2024-11-24",
-        "title": "Victory Capital Management Inc. Trims Stock Holdings in Arch Resources, Inc. (NYSE:ARCH)",
+        "url": "https://www.marketbeat.com/instant-alerts/doordash-inc-nasdaqdash-insider-sells-135644040-in-stock-2024-11-22",
+        "title": "DoorDash, Inc. (NASDAQ:DASH) Insider Sells $1,356,440.40 in Stock",
         "source_name": "marketbeat.com"
       },
       {
-        "url": "https://techdows.com/2024/11/23/liberty-health-sciences-otcmktslhsif-shares-down-2-2-whats-next/644431.html",
-        "title": "Liberty Health Sciences (OTCMKTS:LHSIF) Shares Down 2.2% \u2013 What\u2019s Next?",
-        "source_name": "techdows.com"
+        "url": "https://www.dnaindia.com/business/report-gautam-adani-group-cfo-makes-big-statement-on-us-report-says-none-of-the-3119289",
+        "title": "Adani Group CFO makes BIG statement on US report, says, 'none of the...'",
+        "source_name": "dnaindia.com"
       },
       {
-        "url": "https://www.etfdailynews.com/2024/11/24/freshpet-nasdaqfrpt-downgraded-to-sell-rating-by-stocknews-com",
-        "title": "Freshpet (NASDAQ:FRPT) Downgraded to Sell Rating by StockNews.com",
-        "source_name": "etfdailynews.com"
-      },
-      {
-        "url": "https://www.newsbreak.com/wavy-news-10-1589983/3687186791118-hyundai-kia-recall-over-200k-electric-cars-over-power-issues",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://news24online.com/india/congress-alleges-evm-manipulation-behind-maharashtra-election-defeat-calls-verdict-inexplicable/388978",
-        "title": "Congress Alleges EVM \u2018Manipulation\u2019 Behind Maharashtra Election Defeat, Calls Verdict \u2018Inexplicable\u2019",
-        "source_name": "news24online.com"
-      },
-      {
-        "url": "https://dailyinterlake.com/news/2024/nov/24/reappraisal-report-is-a-warning-shot",
-        "title": "Reappraisal report is a warning shot",
-        "source_name": "dailyinterlake.com"
-      },
-      {
-        "url": "https://freerepublic.com/focus/f-news/4280492/posts",
-        "title": "Trump Plans To Use Impoundment To Cut Spending - What Is It?",
-        "source_name": "freerepublic.com"
-      },
-      {
-        "url": "https://www.archyde.com/recent-food-recalls-what-you-need-to-know-about-safety-and-prevention",
-        "title": "Recent Food Recalls: What You Need to Know About Safety and Prevention",
-        "source_name": "archyde.com"
-      },
-      {
-        "url": "https://www.newsbreak.com/a-to-z-sports-1666355/3687223143398-jets-might-cut-ties-with-aaron-rodgers-sooner-than-expected-as-organization-continues-embarrassing-run",
-        "title": "Adverse Media Event",
-        "source_name": "newsbreak.com"
-      },
-      {
-        "url": "https://www.news18.com/india/saw-what-you-did-india-objects-as-cop29-rushes-to-adopt-300-billion-climate-finance-deal-9132048.html",
-        "title": "\u2018Saw What You Did\u2019: India Objects As COP29 Rushes To Adopt $300 Billion Climate Finance Deal",
-        "source_name": "news18.com"
-      },
-      {
-        "url": "https://www.albawaba.com/editors-choice/why-spain-decided-fine-five-budget-1594416",
-        "title": "Why Spain decided to fine five budget airlines for millions",
-        "source_name": "albawaba.com"
+        "url": "https://kdhnews.com/news/nation/australia-ditches-plans-to-fine-tech-giants-for-misinformation/article_eb2f822d-1809-5abd-a17a-f9056997ffb3.html",
+        "title": "Australia ditches plans to fine tech giants for misinformation | Nation | kdhnews.com",
+        "source_name": "kdhnews.com"
       },
       {
         "url": "https://www.tiogapublishing.com/news/nation/australia-ditches-plans-to-fine-tech-giants-for-misinformation/article_13a95c54-a94c-5008-9e3a-79c6ee92ffb1.html",
@@ -640,19 +228,136 @@ export const DEFAULT_CANDIDATES: CandidateProfile[] = [
         "source_name": "tiogapublishing.com"
       },
       {
-        "url": "https://investorshangout.com/visa-inc-under-scrutiny-key-developments-in-ongoing-lawsuit-130255-",
-        "title": "Visa Inc. Under Scrutiny: Key Developments in Ongoing Lawsuit",
-        "source_name": "investorshangout.com"
+        "url": "https://www.dnaindia.com/business/report-elon-musk-big-statement-on-future-of-us-claims-america-on-brink-of-3119291",
+        "title": "Adverse Media Article",
+        "source_name": "dnaindia.com"
       },
       {
-        "url": "https://articlescad.com/the-way-to-get-around-gamstop-self-exclusion-for-uk-players-134330.html",
-        "title": "The way to get around Gamstop self-exclusion for UK players",
-        "source_name": "articlescad.com"
+        "url": "https://www.straitstimes.com/world/cop29-how-does-us300b-stack-up-less-than-musks-net-worth",
+        "title": "COP29: How does US$300b stack up? Less than Musk\u2019s net worth | The Straits Times",
+        "source_name": "straitstimes.com"
       },
       {
-        "url": "https://www.world-today-news.com/lachezar-borisov-some-parties-are-afraid-to-rule-because-of-the-hole-of-18-billion-bgn-in-the-budget-%e1%90%89-news-from-fakti-bg-bulgaria",
-        "title": "Lachezar Borisov: Some parties are afraid to rule because of the hole of 18 billion. BGN in the budg",
-        "source_name": "world-today-news.com"
+        "url": "https://themercury.com/news/national/the-proposed-anti-misinformation-bill-in-austral-ia-drew-the-wrath-of-x-owner-elon/image_2645b933-3444-5c62-be04-2db58c166258.html",
+        "title": "The proposed anti-misinformation bill in Austral;ia drew the wrath of X owner Elon Musk | National |",
+        "source_name": "themercury.com"
+      },
+      {
+        "url": "https://www.themountainpress.com/news/national/australia-ditches-plans-to-fine-tech-giants-for-misinformation/article_eff52a40-1d13-5c56-8af0-e01fb7f99d81.html",
+        "title": "Australia ditches plans to fine tech giants for misinformation | National News | themountainpress.co",
+        "source_name": "themountainpress.com"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND-004-GOLDMAN",
+    "hit_id": "HIT-GS-RISK",
+    "entity_name": "Goldman Sachs",
+    "risk_category": "Moderate Risk - Investment Write-down & Exposure",
+    "country": "United States / Sweden",
+    "description": "Global investment bank facing substantial multi-million dollar charges on European green battery manufacturer Northvolt write-downs.",
+    "total_events": 13,
+    "events": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Goldman_Sachs",
+        "title": "Goldman Sachs Legal Proceedings, 1MDB Settlement & Fines",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://www.archyde.com/goldman-funds-to-take-900-million-charge-on-northvolt-ft",
+        "title": "Goldman funds to take $900 million charge on Northvolt-FT",
+        "source_name": "archyde.com"
+      },
+      {
+        "url": "https://www.bnnbloomberg.ca:443/investing/2024/11/23/credit-is-so-hot-that-traders-are-building-shorts",
+        "title": "Credit Is So Hot That Traders Are Building Shorts",
+        "source_name": "bnnbloomberg.ca"
+      },
+      {
+        "url": "https://www.marketbeat.com/instant-alerts/basf-otcmktsbasfy-reaches-new-1-year-low-heres-what-happened-2024-11-22",
+        "title": "Basf (OTCMKTS:BASFY) Reaches New 1-Year Low - Here's What Happened",
+        "source_name": "marketbeat.com"
+      },
+      {
+        "url": "https://www.qatar-tribune.com/article/142854/business/german-q3-gdp-downgraded",
+        "title": "German Q3 GDP downgraded - Read Qatar Tribune on the go for unrivalled news coverage",
+        "source_name": "qatar-tribune.com"
+      },
+      {
+        "url": "https://www.marketbeat.com/instant-alerts/insider-selling-eagle-materials-inc-nyseexp-director-sells-3577-shares-of-stock-2024-11-22",
+        "title": "Insider Selling: Eagle Materials Inc. (NYSE:EXP) Director Sells 3,577 Shares of Stock",
+        "source_name": "marketbeat.com"
+      },
+      {
+        "url": "https://wtvbam.com/2024/11/23/goldman-funds-to-take-900-million-hit-on-northvolt-ft-reports",
+        "title": "Goldman funds to take $900 million hit on Northvolt, FT reports | WTVB | 1590 AM \u00b7 95.5 FM | The Voi",
+        "source_name": "wtvbam.com"
+      },
+      {
+        "url": "https://www.ibtimes.com/trumps-mass-deportation-plan-could-end-hurting-economic-growth-3752408",
+        "title": "Trump's Mass Deportation Plan Could End Up Hurting Economic Growth | IBTimes",
+        "source_name": "ibtimes.com"
+      },
+      {
+        "url": "https://menafn.com/1108918832/Trumps-mass-deportation-plan-could-end-up-hurting-economic-growth",
+        "title": "Trump's mass deportation plan could end up hurting economic growth",
+        "source_name": "menafn.com"
+      },
+      {
+        "url": "https://www.marketbeat.com/instant-alerts/insider-selling-ares-management-co-nyseares-ceo-sells-18232-shares-of-stock-2024-11-22",
+        "title": "Insider Selling: Ares Management Co. (NYSE:ARES) CEO Sells 18,232 Shares of Stock",
+        "source_name": "marketbeat.com"
+      },
+      {
+        "url": "https://www.marketbeat.com/instant-alerts/insider-selling-ares-management-co-nyseares-insider-sells-18259-shares-of-stock-2024-11-22",
+        "title": "Insider Selling: Ares Management Co. (NYSE:ARES) Insider Sells 18,259 Shares of Stock",
+        "source_name": "marketbeat.com"
+      },
+      {
+        "url": "https://www.marketbeat.com/instant-alerts/ares-management-co-nyseares-ceo-sells-442328788-in-stock-2024-11-22",
+        "title": "Ares Management Co. (NYSE:ARES) CEO Sells $4,423,287.88 in Stock",
+        "source_name": "marketbeat.com"
+      },
+      {
+        "url": "https://www.wyomingnews.com/news/national/trumps-mass-deportation-plan-could-end-up-hurting-economic-growth/article_5564688b-b5ad-5637-b096-f3e10d0b4586.html",
+        "title": "Trump's mass deportation plan could end up hurting economic growth",
+        "source_name": "wyomingnews.com"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CAND-005-CONTROL-FP",
+    "hit_id": "HIT-CONTROL-FALSE",
+    "entity_name": "Viktor Petrov",
+    "risk_category": "Verification Control - False Positive Rejection",
+    "country": "Cyprus / Global",
+    "description": "Control subject to verify that the LLM agent accurately identifies lack of adverse findings and does not hallucinate false positives.",
+    "total_events": 5,
+    "events": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Monetary_policy",
+        "title": "Federal Reserve Monetary Policy Principles",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Inflation",
+        "title": "Global Inflation Macroeconomic Report",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Interest_rate",
+        "title": "Interest Rate Trends and Sovereign Debt",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/European_Central_Bank",
+        "title": "European Central Bank Operating Framework",
+        "source_name": "Wikipedia"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bank_of_Japan",
+        "title": "Bank of Japan Yield Curve Control Overview",
+        "source_name": "Wikipedia"
       }
     ]
   }
